@@ -1,0 +1,40 @@
+.clock {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1rem;
+	flex: 1;
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+		gap: 0;
+	}
+	.divider {
+		display: flex;
+		width: 70px;
+		height: 15px;
+		background: #000;
+		border-radius: 10px;
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+			border-radius: 10px;
+			width: 15px;
+			height: 70px;
+		}
+		&.d-1 {
+			rotate: -7deg;
+			@media screen and (min-width: 768px) {
+				rotate: 7deg;
+			}
+		}
+		&.d-2 {
+			rotate: 7deg;
+		}
+	}
+}
+
+.hours,
+.minutes,
+.seconds {
+	display: flex;
+}

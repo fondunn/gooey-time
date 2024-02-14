@@ -1,0 +1,11 @@
+.svg {
+	width: 128px;
+
+	filter: url('#filter');
+	path {
+		display: none;
+	}
+	circle {
+		fill: black;
+	}
+}
